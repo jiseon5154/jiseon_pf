@@ -55,12 +55,92 @@ body {
 }
 /* 햄버거메뉴바_텍스트 정렬 끝 */
 
+/* 팝업 시작 */
+.popup {
+  background-color:rgba(0,0,0,0.5);
+  visibility:hidden;
+  opacity:0;
+  transition:visibility 0.3s, opacity 0.3s;
+  z-index:1;
+}
+
+.popup.active {
+  visibility:visible;
+  opacity:1;
+}
+
+/* 팝업_배경 시작 */
+.popup__content {
+  background-color: #fef3dc;
+  width: 900px;
+  height: 574px;
+  transform:translateX(-3%);
+  transition:transform 0.5s;
+}
+
+.popup.active .popup__content {
+  transform:translateX(0);
+}
+/* 팝업_배경 끝 */
+
+/* 팝업 닫기 버튼 시작 */
+.popup__btn-close::after {
+  content:"";
+  position:absolute;
+  top:40%;
+  left:0;
+  width:100%;
+  height:20%;
+  background-color:#475835;
+  border-radius:5px;
+  transition: box-shadow 0.2s;
+  z-index:1;
+}
+
+.popup__btn-close:hover::after {
+  box-shadow:0 0 10px rgba(0,0,0,0.5);
+}
+/* 팝업 닫기 버튼 끝 */
+
+html[class*="popup-"][class*="-actived"],
+html[class*="popup-"][class*="-actived"] > body {
+  overflow:hidden;
+}
+
+/* 토글 팝업 시작 */
+.btn-toggle-popup-1 {
+  color:#475835;
+}
+
+.btn-toggle-popup-1.active {
+  font-weight:bold;
+  text-shadow:0 0 1px rgba(0,0,0.5);
+  position:relative;
+}
+/* 토글 팝업 끝 */
+
+/* 팝업_우측 이미지 시작 */
+.popup-1 .image-1 {
+  position:relative;
+  left:600px;
+  bottom: 50px;
+  opacity:0;
+  transition:opacity 1s 1s, left 1s 1s;
+}
+
+.popup-1.active .image-1 {
+  left:500px;
+  opacity:1;
+}
+/* 팝업_우측 이미지 끝 */
+/* 팝업 끝 */
+
+
 .txt-box {
   font-size:25px;
   font-family: 'Fira Sans', sans-serif;
   color: #FEF3DC;
 }
-
 
 /* top-box 시작 */
 .btn-go-top-box {
