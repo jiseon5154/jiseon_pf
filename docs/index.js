@@ -40,8 +40,9 @@ function Popup__init(no) {
     Popup__hide(no);
   });
 
-  $(`.popup-${no} .popup__content`).click(function() {
-    return false;
+  $(`.popup-${no} .popup__content`).click(function(e) {
+    e.stopPropagation();
+    //e.preventDefault();
   });
 }
 

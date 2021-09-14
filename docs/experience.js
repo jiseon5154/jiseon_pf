@@ -58,7 +58,8 @@ function Popup__init(no) {
   });
 
   $(`.popup-${no} .popup__content`).click(function() {
-    return false;
+    e.stopPropagation();
+    //e.preventDefault();
   });
 }
 
