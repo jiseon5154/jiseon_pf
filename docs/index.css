@@ -172,7 +172,7 @@ body {
   font-size: 40px;
 }
 
-.menu-wrap>li:hover>a {
+.menu-wrap>li>a:hover {
   color: #ffb600;
 }
 
