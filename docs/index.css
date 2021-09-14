@@ -244,7 +244,7 @@ html[class*="popup-"][class*="-actived"] > body {
 
 /* 토글 팝업 시작 */
 .btn-toggle-popup-1 {
-  color:#475835;
+  color:#fef3dc;
 }
 
 .btn-toggle-popup-1.active {

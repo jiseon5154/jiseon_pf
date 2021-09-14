@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Process</title>
+
+  <!-- 제이쿼리 -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <!-- 폰트어썸 -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+  <!-- 스와이퍼 -->
+  <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+  <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+  <!-- GSAP -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.5.1/gsap.min.js"></script>
+  <!-- 스크롤트리거 -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.5.1/ScrollTrigger.min.js"></script>
+  <!-- 테일윈드 -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/tailwindcss/2.1.2/tailwind.min.css">
+
+  <link rel="stylesheet" href="process.css">
+  <script src="process.js" defer></script>
+</head>
+
+<body>
+  <!-- 탑바 시작 -->
+<header class="top-bar con-min-width h-28">
+  <div class="con flex h-full items-center">
+    <a href="index.html" class="logo">
+      <img src="https://i.postimg.cc/3wP0bnTC/1.png" alt="">
+    </a>
+    <!--   빈공간   -->
+    <div class="flex-grow"></div>
+    <!--  토글팝업_햄버거버튼   -->
+    <a href="#" class="btn-toggle-popup-1 text-3xl">
+      <span><i class="fas fa-stream"></i></span>
+    </a>
+  </div>
+</header>
+
+<!-- 팝업 시작 -->
+<div class="popup-1 popup fixed inset-0 flex items-center justify-center">
+  <div class="popup__content max-h-full flex flex-col">
+    <!--  팝업 닫기 버튼  -->
+    <div class="popup__head p-2">
+      <div class="popup__btn-close relative w-11 h-10 ml-auto cursor-pointer"></div>
+    </div>
+    <!--   팝업_내용   -->
+    <div class="popup__body p-2 flex-grow">
+      <div class="container">
+        <img class="image-1" src="https://i.postimg.cc/KzdP5BT7/image.png" alt="">
+        <!--  햄버거메뉴바 / Text_정렬  -->
+        <div class="sm-wrapper absolute flex">
+          <!--  햄버거메뉴바 / Text_메뉴  -->
+          <nav class="left flex items-center">
+            <!--  햄버거메뉴바 / Text(ko)_img  -->
+            <img class="text-img flex" src="https://i.postimg.cc/g2zSRHMg/image.png" alt="">
+            <!--  햄버거메뉴바 / Text(en)_메뉴정렬  -->
+            <ul class="menu-wrap ml-40">
+              <li class="pb-2">
+                <a href="process.html" class="flex">
+                  <span class="pr-2"><i class="fas fa-grip-lines-vertical"></i></span>
+                  <p>Process</p>
+                </a>
+              </li>
+              <li class="pb-2">
+                <a href="aboutMe.html" class="flex">
+                  <span class="pr-2"><i class="fas fa-grip-lines-vertical"></i></span>
+                  <p>About</p>
+                </a>
+              </li>
+              <li class="pb-2">
+                <a href="#" class="flex">
+                  <span class="pr-2"><i class="fas fa-grip-lines-vertical"></i></span>
+                  <p>Portfolio</p>
+                </a>
+              </li>
+              <li>
+                <a href="experience.html" class="flex">
+                  <span class="pr-2"><i class="fas fa-grip-lines-vertical"></i></span>
+                  <p>Experience</p>
+                </a>
+              </li>
+            </ul>
+          </nav>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- top-box -->
+<div class="btn-go-top-box">
+  <a href="#">
+    <div class="btn-top"></div>
+  </a>
+</div>
+
+
+
+<!-- section-1 -->
+<section class="section section-1 con-min-width">
+  <div class="bg-1"></div>
+</section>
+
+<section class="section section-2 con-min-width">
+  <div class="con">
+    <div class="pr-ov flex mt-48">
+      <div class="pr-ov_txt1 flex">
+        <img src="https://i.postimg.cc/sf7bc7Jp/overview.png" alt="">
+      </div>
+      <div class="flex-grow"></div>
+      <div class="pr-ov_txt2 flex">
+        <img src="https://i.postimg.cc/LXHgbz1n/image.png" alt="">
+      </div>
+    </div>
+    <div class="pr-lo flex mt-56">
+      <div class="pr-lo_txt1 flex">
+        <img src="https://i.postimg.cc/Kz6WrvVc/logo.png" alt="">
+      </div>
+      <div class="flex-grow"></div>
+      <div class="pr-lo_txt2 flex">
+        <img src="https://i.postimg.cc/KjmPy63r/image.png" alt="">
+      </div>
+    </div>
+    <div class="pr-lo_image mt-24 flex items-center justify-center">
+      <img src="https://i.postimg.cc/k5z0gc7p/image.png" alt="">
+    </div>
+  </div>
+</section>
+
+<section class="section section-3 con-min-width">
+  <div class="con">
+    <div class="pr-co flex mt-20">
+      <div class="pr-co_txt1 flex">
+        <img src="https://i.postimg.cc/T1dpYmjB/logo.png" alt="">
+      </div>
+      <div class="flex-grow"></div>
+      <div class="pr-co_txt2 mr-5">
+        <img src="https://i.postimg.cc/RFXvdYfb/image.png" alt="">
+      </div>
+    </div>
+    <div class="pr-co_image mt-24 flex items-center justify-center">
+      <img src="https://i.postimg.cc/d0S9Ps82/Group-24.png" alt="">
+    </div>
+    <div class="pr-ty flex mt-56">
+      <div class="pr-ty_txt1 flex">
+        <img src="https://i.postimg.cc/ZK9y9Pzh/logo-1.png" alt="">
+      </div>
+      <div class="flex-grow"></div>
+      <div class="pr-ty_txt2 flex">
+        <img src="https://i.postimg.cc/Hn8sL2cZ/S-core-Dream-Fira-Sans.png" alt="">
+      </div>
+    </div>
+    <div class="pr-ty_image mt-28 flex items-center justify-center">
+      <img src="https://i.postimg.cc/wBSsQ7XG/Group-29.png" alt="">
+    </div>
+  </div>
+</section>
+
+<section class="section section-4 con-min-width">
+  <div class="con">
+    <div class="pr-Main_txt1 flex mt-56">
+      <img src="https://i.postimg.cc/BvGjjd4r/Main-Page.png" alt="">
+    </div>
+    <div class="pr-Main mt-24 relative">
+      <div class="pr-Main_image flex items-center justify-center">
+        <img src="https://i.postimg.cc/MHX79hcs/Group-54.png" alt="">
+        <img class="pr-Main_image2 absolute" src="https://i.postimg.cc/4yZ6gmFS/Group-55.png" alt="">
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<section class="section section-5 con-min-width">
+  <div class="con flex items-center mt-36">
+    <div class="flex items-center">
+      <div class="pr-ab_image flex absolute">
+        <img src="https://i.postimg.cc/7h5kqMtB/Group-56.png" alt="">
+      </div>
+    </div>
+    <img class="pr-ab_image2 sticky" src="https://i.postimg.cc/ZqgkVy5p/Group-60.png" alt="">
+  </div>
+</section>
+
+<section class="section section-6 con-min-width">
+  <div class="con">
+    <div class="pr-pf_image flex items-center justify-center mt-64">
+      <img src="https://i.postimg.cc/Qd2qXpSf/Group-63.png" alt="">
+    </div>
+  </div>
+</section>
+
+<section class="section section-7 con-min-width">
+  <div class="con flex items-center mt-60">
+    <div class="flex items-center">
+      <div class="pr-ex_image flex absolute">
+        <img src="https://i.postimg.cc/Twwj0CPY/Group-58.png" alt="">
+      </div>
+    </div>
+    <img class="pr-ex_image2 sticky" src="https://i.postimg.cc/156dD5T7/Group-61.png" alt="">
+  </div>
+</section>
+
+<section class="section section-8 con-min-width relative">
+  <img class="pr-ft_image1 flex mt-52" src="https://i.postimg.cc/L6rQmwZY/Group-63.png" alt="">
+  <div class="con flex items-center">
+    <div class="pr-ft_image flex relative">
+      <div class="flex">
+        <img class="pr-ft_image2 aboslute" src="https://i.postimg.cc/3xXPQJF0/Group-59.png" alt="">
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section section-9 con-min-width">
+  <div class="con flex flex-col mt-20">
+    <div class="ab-8 flex items-center justify-center mt-20">
+      <img src="https://i.postimg.cc/vZ4xX4Dn/image.png" alt="">
+    </div>
+    <div class="btn relative flex">
+      <!--   footer / arw & circle_Portfolio   -->
+      <a href="#">
+        <div class="btn-1">
+          <p>About</p>
+          <div class="arw"></div>
+          <div class="circle"></div>
+        </div>
+      </a>
+      <!--  footer / arw & circle_About    -->
+      <a href="#">
+        <div class="btn-2">
+          <p>Portfolio</p>
+          <div class="arw"></div>
+          <div class="circle"></div>
+        </div>
+      </a>
+      <!--  footer / arw & circle_About    -->
+      <a href="experience.html">
+        <div class="btn-3">
+          <p>Experience</p>
+          <div class="arw"></div>
+          <div class="circle"></div>
+        </div>
+      </a>
+    </div>
+  </div>
+</section>
+
+</body>
+</html>
