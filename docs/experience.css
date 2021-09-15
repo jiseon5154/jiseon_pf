@@ -171,10 +171,15 @@ html[class*="popup-"][class*="-actived"] > body {
 
 .section-1 {
   background-color:#475835;
+  min-height:90vh;
 }
 
 .main_image {
   margin-left:70px;
+}
+
+.main_image1 {
+  margin-top:25px;
 }
 
 .ex-2_image2 {
