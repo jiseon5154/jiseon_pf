@@ -51,7 +51,7 @@ body {
   font-family: 'S-CoreDream-6Bold';
   color: #fef3dc;
   font-size: 30px;
-  margin-top: 260px;
+  margin-top: 230px;
   margin-left: 243px;
 }
 
@@ -73,7 +73,7 @@ body {
 /* 메인페이지 : Portfolio */
 .btn-1 {
   position: absolute;
-  top: 410px;
+  top: 380px;
   left: 420px;
   cursor: pointer;
   width: 400px;
@@ -83,7 +83,7 @@ body {
 .btn-2 {
   position: absolute;
   left: 120px;
-  top: 60px;
+  top: 30px;
   z-index: 1;
 }
 
@@ -179,7 +179,7 @@ body {
 }
 
 .site-wrap>.Text_image {
-  top: 450px;
+  top: 420px;
 }
 
 /* 햄버거메뉴바_텍스트 정렬 시작 */
